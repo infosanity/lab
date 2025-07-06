@@ -49,3 +49,8 @@ status: {}
 
 ## Shell in a Pod
     kubectl exec -it <pod> -- /bin/bash
+
+## Deployments
+### Generate yaml skeleton
+    kubectl create deployment test --image --dry-run=clinet -o yaml 
+
