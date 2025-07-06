@@ -8,3 +8,5 @@
 ## Rancher Desktop
 ### rdctl
   rdctl shell bash
+### shutdown
+  rdctl shutdown

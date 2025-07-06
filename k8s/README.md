@@ -5,6 +5,12 @@ in ~/.bash_aliases:
 
     alias k=kubectl
 
+### Autocompletion
+  echo "source <(kubectl completion bash)" >> ~/.bashrc
+  
+  # use autocomplete with k alias (above), add to ~/.bash_aliases
+  complete -o default -F __start_kubectl k 
+
 ## Cluster Admin
 
 ### Cluster Status
