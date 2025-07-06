@@ -54,3 +54,6 @@ status: {}
 ### Generate yaml skeleton
     kubectl create deployment test --image --dry-run=clinet -o yaml 
 
+## Services
+
+## Ingress
