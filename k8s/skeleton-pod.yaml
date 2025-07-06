@@ -8,6 +8,11 @@ spec:
   containers:
   - image: nginx
     name: nginx
+    env:
+    - name: ENVVAR
+      value: "wibble"
+    command: ["/bin/bash", "-c"]
+    args: ["/bin/echo \"${ENVVAR}\""]
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
