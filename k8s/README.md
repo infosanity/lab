@@ -23,6 +23,9 @@ To refresh certs for new IP address:
 
     sudo microk8s refresh-certs --cert ca.crt
 
+### Delete all resource in Namepsace
+```kubectl delete all --all -n {namespace}```
+
 ### top
 #### node
     kubectl top node
