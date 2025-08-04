@@ -1,4 +1,4 @@
-# gh0st
+# Zenith
 
 ## BLUF
 * Windows11
