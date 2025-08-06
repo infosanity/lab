@@ -8,7 +8,7 @@ WARP is a device client that builds proxy tunnels using either Wireguard or MASQ
 ## Install WARP Client
 ### Ubuntu
 [Vendor Docs](https://pkg.cloudflareclient.com/)
-```
+```shell
 # Add cloudflare gpg key
 curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
 

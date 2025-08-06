@@ -7,7 +7,7 @@ _source: https://developers.cloudflare.com/cloudflare-one/connections/connect-ne
 ## Client
 ### Ubuntu
 #### Install via APT
-```
+```shell
 # Add cloudflare gpg key
 sudo mkdir -p --mode=0755 /usr/share/keyrings
 curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
@@ -20,6 +20,6 @@ sudo apt-get update && sudo apt-get install cloudflared
 ```
 
 #### Persistent Tunnel as a service
-```
+```shell
 sudo cloudflared service install <YOUR-TOKEN-HERE>
 ```
