@@ -22,6 +22,12 @@ Port = 50022
 ForwardX11 = no
 ```
 
+## Read from file
+```python
+config = configparser.ConfigParser()
+config.read("/path/to/file.cfg")
+```
+
 ### Load Section as dict
 ```python
 conf_variable = config._sections['DEFAULT']
