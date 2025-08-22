@@ -36,3 +36,16 @@ conf_variable = config._sections['DEFAULT']
 print(conf_variable.get("ForwardX11"))
 # prints "yes"
 ```
+
+## Write to file
+```python
+with open("tmp.cfg", "w") as cfg:
+    config.write(cfg)
+```
+
+## Create from Scratch
+```python
+config = configparser.ConfigParser()
+config["section"] = {}
+config["section"]["var"] = "value"
+```
