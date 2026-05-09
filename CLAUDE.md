@@ -16,7 +16,7 @@ Each top-level directory covers a technology domain:
 - `docker/` — Docker cheatsheet and a Python proof-of-concept Dockerfile.
 - `cloudflare/` — Notes on `cloudflared` tunnels and WARP client setup.
 - `python/` — Python snippets and notes (`click` CLI skeleton, `configparser` reference).
-- `tools/` — Notes on dev tooling; each tool has its own subdirectory with a `README.md` (e.g. `keychain/`, `passage/`, `neofetch/`, `pv/`).
+- `tools/` — Notes on dev tooling; each tool has its own subdirectory with a `README.md` (e.g. `bat/`, `byobu/`, `glow/`, `jq/`, `keychain/`, `neofetch/`, `passage/`, `pv/`).
 
 ## Conventions
 
