@@ -1,2 +1,5 @@
 apt install tree \
-            mtr
+            mtr \
+            bat \
+            jq \
+            byobu
