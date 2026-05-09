@@ -1,0 +1,12 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/awaite/.claude/statusline-command.sh"
+  },
+  "theme": "dark",
+  "hooks": {
+    "PostToolUse": [
+      {"matcher": "Edit|Write", "hooks": [{"type": "command", "command": "bash /home/awaite/.claude/hooks/pymarkdown-check.sh"}]}
+    ]
+  }
+}
