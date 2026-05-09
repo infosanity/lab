@@ -68,3 +68,15 @@ Sessions survive disconnection. After reconnecting:
 ```bash
 byobu attach       # or just: byobu
 ```
+
+## Colour-coding remote panes
+
+When SSHing into a remote machine from within a byobu pane, the terminal background colour can be changed automatically on connect and restored on disconnect. This gives an immediate visual indicator of which pane is running on which machine.
+
+Requires passthrough enabled in `~/.tmux.conf` so OSC escape sequences reach the terminal:
+
+```
+set -g allow-passthrough on
+```
+
+See [gh0st README](../../gh0st/README.md#visual-terminal-indicator) for the remote-side configuration.
