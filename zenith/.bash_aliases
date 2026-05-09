@@ -1,6 +1,9 @@
 # MTR - terminal output
 alias mtr="mtr -t"
 
+# bat - Ubuntu installs as batcat to avoid name conflict
+alias bat='batcat'
+
 # GIT
 ## Tree Views - source: https://tech.serhatteker.com/post/2021-02/git-log-tree/
 alias glt='git log --oneline --decorate --graph --all'
