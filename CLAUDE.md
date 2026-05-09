@@ -15,9 +15,8 @@ Each top-level directory covers a technology domain:
 - `k8s/` — Kubernetes cheatsheet and YAML skeletons (pod, deployment, cron).
 - `docker/` — Docker cheatsheet and a Python proof-of-concept Dockerfile.
 - `cloudflare/` — Notes on `cloudflared` tunnels and WARP client setup.
-- `linux/` — Notes on handy Linux utilities.
 - `python/` — Python snippets and notes (`click` CLI skeleton, `configparser` reference).
-- `tools/` — Notes on dev tooling; each tool has its own subdirectory with a `README.md` (e.g. `keychain/`, `passage/`).
+- `tools/` — Notes on dev tooling; each tool has its own subdirectory with a `README.md` (e.g. `keychain/`, `passage/`, `neofetch/`, `pv/`).
 
 ## Conventions
 
