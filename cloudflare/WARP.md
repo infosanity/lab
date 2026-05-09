@@ -32,7 +32,7 @@ If environment can't spawn a browser session, the authentication token needs to 
 
 1) authenticate to: https://\<your-team-name\>.cloudflareaccess.com/warp
 2) from page source, extract token from the **open Cloudflare WARP** button. HREF will look similar to:
-```onclick="location.href = 'com.cloudflare.warp://infosanity.cloudflareaccess.com/auth?token=ey```
+```onclick="location.href = 'com.cloudflare.warp://<your-team-name>.cloudflareaccess.com/auth?token=ey```
 3) from your terminal, take the link above and feed into command:
 
 ```
