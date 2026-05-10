@@ -1,6 +1,10 @@
 # htop
 
-`htop` is an interactive process viewer. It extends `top` with a colour display, mouse support, scrolling, and direct process management without needing to know PIDs.
+`htop` is my go-to for a quick look at what a machine is actually doing. It extends `top` with a colour display, mouse support, scrolling, and direct process management — without needing to know PIDs first.
+
+Worth noting upfront: htop is an interactive tool. If you're writing a script, reach for `ps` or `top -bn1` instead.
+
+Project: [htop.dev](https://htop.dev) / [github.com/htop-dev/htop](https://github.com/htop-dev/htop).
 
 ## Install
 
@@ -12,7 +16,7 @@ sudo apt install htop
 
 ```bash
 htop              # all processes, sorted by CPU
-htop -u awaite    # filter to a specific user
+htop -u $USER     # filter to a specific user
 htop -p 1234,5678 # watch specific PIDs only
 htop -d 5         # set refresh interval to 0.5 s (tenths of a second)
 ```
@@ -43,7 +47,6 @@ htop -d 5         # set refresh interval to 0.5 s (tenths of a second)
 |-----|--------|
 | `F3` or `/` | search process name |
 | `F4` or `\` | filter — hide non-matching processes |
-| `F5` | toggle tree view (shows parent/child hierarchy) |
 | `u` | filter by user |
 
 ### Process management
@@ -61,22 +64,17 @@ htop -d 5         # set refresh interval to 0.5 s (tenths of a second)
 | Key | Action |
 |-----|--------|
 | `F2` | setup — configure meters, columns, colours |
+| `F5` or `t` | toggle tree view (shows parent/child hierarchy) |
 | `F1` or `h` | help |
 | `Space` | tag a process (for bulk signal/kill) |
 | `U` | untag all |
 | `H` | toggle display of user threads |
 | `K` | toggle display of kernel threads |
-
-### Other
-
-| Key | Action |
-|-----|--------|
 | `F10` or `q` | quit |
-| `t` | toggle tree / flat view |
 
 ## Header meters
 
-The top section shows CPU bars (one per core), memory, and swap. These are configurable via `F2 → Meters`. Useful additions:
+The top section shows CPU bars (one per core), memory, and swap. These are configurable via `F2 → Meters` — it's worth spending a few minutes in there. Useful additions:
 
 - **Load average** — 1/5/15 minute averages
 - **Uptime**
@@ -94,9 +92,8 @@ The top section shows CPU bars (one per core), memory, and swap. These are confi
 
 ## Non-interactive use
 
-htop is designed as an interactive tool. For scripting, prefer `ps` or `top -bn1`. However, htop can be useful in combination with recording tools:
+htop isn't designed for scripting — for that, use `ps` or `top -bn1`. That said, `--no-color` makes the output at least parseable if you're capturing it for logging purposes. I wouldn't rely on the format being stable.
 
 ```bash
-# Capture a snapshot of the process list to a file
 htop --no-color -d 1 | head -50 > snapshot.txt
 ```
