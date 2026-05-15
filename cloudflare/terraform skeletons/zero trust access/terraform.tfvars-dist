@@ -1,0 +1,2 @@
+cloudflare_account   = "<Cloudflare-account-ID>"
+cloudflare_api_token = "<Cloudflare-API-Token>"
